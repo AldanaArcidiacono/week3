@@ -1,7 +1,10 @@
-import { x } from '../src/index';
+import { twice } from './tools';
 
 describe('first', () => {
     test('should first', () => {
-        expect(x).toBe(x);
+        const x = 2;
+        const expectedResult = 4;
+        const r = twice(x);
+        expect(r).toBe(expectedResult);
     });
 });
