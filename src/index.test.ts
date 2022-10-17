@@ -1,4 +1,4 @@
-import { x } from './index.js';
+import { x } from '../src/index';
 
 describe('first', () => {
     test('should first', () => {
