@@ -28,9 +28,11 @@ const makeAsyncPromises2 = () => {
 })();
 const pf = makeAsyncPromises2();
 const qf = makeAsyncPromises2();
+//Entra en el then solo si todas las promesas se resuelven
 Promise.all([pf, qf]).then((cosas) => {
     cosas[0], cosas[1];
 });
+//Entra en el then
 Promise.allSettled([pf, qf]).then((cosas) => {
     cosas[0], cosas[1];
 });
