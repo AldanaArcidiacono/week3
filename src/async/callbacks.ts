@@ -6,7 +6,7 @@ const makeAsync = (callback: (value: string) => void) => {
     }, 2000);
 };
 
-const render = (value: any) => {
+const render = (value: string) => {
     console.log(value);
 };
 

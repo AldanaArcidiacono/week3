@@ -1,15 +1,15 @@
 const makeAsyncPromises = (): Promise<string> => {
     let data;
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const r = Math.random();
-            if (r > 0.5) {
-                data = '1000';
-                resolve(data);
-            } else {
-                reject(new Error('Error ' + r));
-            }
-        }, 2000);
+        //setTimeout(() => {
+        const r = Math.random();
+        if (r > 0.5) {
+            data = '1000';
+            resolve(data);
+        } else {
+            reject(new Error('Error ' + r));
+        }
+        //}, 2000);
     });
 };
 
@@ -32,4 +32,7 @@ makeAsyncPromises()
     })
     .catch((error: Error) => {
         console.log(error.message);
+    })
+    .finally(() => {
+        console.log('No se usa mucho');
     });
