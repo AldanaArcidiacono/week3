@@ -21,7 +21,7 @@ const main = () => {
         eSlot.outerHTML = template;
     };
     const eUserForm = document.querySelector('.user-form');
-    eUserForm === null || eUserForm === void 0 ? void 0 : eUserForm.addEventListener('submit', handleSubmit);
+    eUserForm?.addEventListener('submit', handleSubmit);
 };
 console.log('Loaded Index');
 document.addEventListener('DOMContentLoaded', main);
